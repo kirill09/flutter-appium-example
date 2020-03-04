@@ -39,11 +39,15 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.microfabrix.onboarding"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        ndk {
+//            abiFilters "armeabi-v7a", "x86_64", "armeabi", "mips"
+//// abiFilters "arm64-v8a", "armeabi-v7a","armeabi", "mips", "x86"
+//        }
     }
 
     buildTypes {
@@ -62,6 +66,6 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.1.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.1.1'
 }
